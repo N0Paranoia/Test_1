@@ -74,16 +74,16 @@ move_vert = key_up + key_down;
 if (speed_y &lt; 10) speed_y += grav;
 
 // jumping
-if (place_meeting(x,y+1,par_solid_block)) {
+if (place_meeting(x,y+1,par_solid_blocks)) {
     speed_y = key_jump * -speed_j;
 }
 
 // Horizontal Collision 
-if (place_meeting(x+speed_x,y,par_solid_block)) {
+if (place_meeting(x+speed_x,y,par_solid_blocks)) {
     yplus = 0;
-    while (place_meeting(x+speed_x,y-yplus,par_solid_block) &amp;&amp; yplus &lt;= abs(1*speed_x)) yplus += 1;
-    if (place_meeting(x+speed_x,y-yplus,par_solid_block)) {
-        while (!place_meeting(x+sign(speed_x),y,par_solid_block)) {
+    while (place_meeting(x+speed_x,y-yplus,par_solid_blocks) &amp;&amp; yplus &lt;= abs(1*speed_x)) yplus += 1;
+    if (place_meeting(x+speed_x,y-yplus,par_solid_blocks)) {
+        while (!place_meeting(x+sign(speed_x),y,par_solid_blocks)) {
             x += sign(speed_x);
         }
         speed_x = 0;
@@ -94,13 +94,19 @@ if (place_meeting(x+speed_x,y,par_solid_block)) {
 x += speed_x;
 
 // Vertical Collision
-if (place_meeting(x,y+speed_y,par_solid_block)) {
-    while(!place_meeting(x,y+sign(speed_y),par_solid_block)) {
+if (place_meeting(x,y+speed_y,par_solid_blocks)) {
+    while(!place_meeting(x,y+sign(speed_y),par_solid_blocks)) {
         y += sign(speed_y);
     }
     speed_y = 0;
 }
 y += speed_y;
+
+// Doors
+if(place_meeting(x,y,obj_door) &amp;&amp; (key_up == 1)) {
+    x = 0;
+    y = 0;
+}
 
 
 </string>
