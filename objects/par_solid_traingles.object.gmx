@@ -25,37 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// determine shadow
-
-switch(object_index) {
-    case obj_slope_left:
-        caster_init_polygon();
-        caster_add_point(-sprite_xoffset,-sprite_yoffset);
-        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset + sprite_height);
-        break;
-    case obj_slope_right:
-        caster_init_polygon();
-        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset);
-        break;
-    case obj_bottom_slope_left:
-        caster_init_polygon();
-        caster_add_point(-sprite_xoffset,-sprite_yoffset + (sprite_height / 2));
-        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset + sprite_height);
-        break;
-    case obj_bottom_slope_right:
-        caster_init_polygon();
-        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + (sprite_height / 2));
-        break;
-    default:
-        caster_init_sprite();
-        break;
-}
+            <string>caster_init_triangle()
 </string>
           </argument>
         </arguments>
@@ -78,8 +48,7 @@ switch(object_index) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-
+            <string>draw_self()
 </string>
           </argument>
         </arguments>

@@ -1,4 +1,4 @@
-﻿//DOES: draws the lightmap to the screen
+//DOES: draws the lightmap to the screen
 
 //USAGE: lightmap_draw();
 

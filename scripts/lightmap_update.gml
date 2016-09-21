@@ -1,4 +1,4 @@
-﻿//DOES: updates the lightmap and redraws the light.
+//DOES: updates the lightmap and redraws the light.
 
 //USAGE: lightmap_update();
 
