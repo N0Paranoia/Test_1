@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_caster_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// initializing
-grav = 0.2;
+grav = 0.9;
 speed_x = 0;
 speed_y = 0;
 speed_j = 7;
@@ -37,6 +37,8 @@ x_running_speed = 8;
 can_go_trough_doors = true
 
 state = states.normal;
+
+caster_init_sprite();
 </string>
           </argument>
         </arguments>
@@ -69,6 +71,34 @@ switch(state) {
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Draw self is needed to draw the sprite if there is an "Draw" event
+draw_self();
+// Draw FPS if in debug mode
+if debug_mode {
+    draw_text(32, 32, "FPS = " + string(fps_real));
+}
 </string>
           </argument>
         </arguments>

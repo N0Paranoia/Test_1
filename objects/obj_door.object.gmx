@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Set door vatiables
-door_1_x = 160
-door_1_y = 192
+door_1_x = 96
+door_1_y = 160
 
-door_2_x = 544
-door_2_y = 192
+door_2_x = 576
+door_2_y = 160
 </string>
           </argument>
         </arguments>
