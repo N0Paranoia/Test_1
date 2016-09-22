@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>// determine shadow
-
 switch(object_index) {
     case obj_slope_left:
         caster_init_polygon();
@@ -51,6 +50,40 @@ switch(object_index) {
         caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
         caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
         caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + (sprite_height / 2));
+        break;
+    case obj_top_slope_left:
+        caster_init_polygon();
+        caster_add_point(-sprite_xoffset,-sprite_yoffset);
+        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + (sprite_height / 2));
+        break;
+    case obj_top_slope_right:
+        caster_init_polygon();
+        caster_add_point(-sprite_xoffset,-sprite_yoffset + (sprite_height / 2));
+        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset);
+        break;
+    case obj_bump:
+        caster_init_polygon();
+        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + (sprite_width - 4), -sprite_yoffset + sprite_height - 4);
+        caster_add_point(-sprite_xoffset + (sprite_width - 12), -sprite_yoffset + sprite_height - 6);
+        caster_add_point(-sprite_xoffset + 12,-sprite_yoffset + sprite_height - 6);
+        caster_add_point(-sprite_xoffset + 4,-sprite_yoffset + sprite_height - 4);
+        break;
+    case obj_hole:
+        caster_init_polygon();
+        caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
+        caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset);
+        caster_add_point(-sprite_xoffset + sprite_width -4 ,-sprite_yoffset + 4);
+        caster_add_point(-sprite_xoffset + sprite_width -12 ,-sprite_yoffset + 6);
+        caster_add_point(-sprite_xoffset + 12 ,-sprite_yoffset + 6);
+        caster_add_point(-sprite_xoffset + 4 ,-sprite_yoffset + 4);
+        caster_add_point(-sprite_xoffset,-sprite_yoffset);
         break;
     default:
         caster_init_sprite();

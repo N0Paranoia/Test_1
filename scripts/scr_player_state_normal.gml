@@ -18,5 +18,5 @@ if (place_meeting(x,y+1,par_solid_blocks)) {
     speed_y = key_jump * -speed_j;
 }
 
-scr_collision(1, 1);
+scr_collision();
 scr_doors();

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>lightmap_init(view_wview,view_hview);
 
-lightmap_set_ambient(0.3);
+lightmap_set_ambient(0.1);
 lightmap_set_light_parent_object(obj_light_parent);
 lightmap_set_caster_parent_object(obj_caster_parent);
 lightmap_move_with_view(true);
