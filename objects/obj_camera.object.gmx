@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,38 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lightmap_init(view_wview,view_hview);
+            <string>//move_towards_point(mouse_x,mouse_y,0);
+xTo = (obj_player.x + (obj_player.hor_size/2)) + (obj_player.speed_x * (view_wview/10)); // + lengthdir_x(min(96,distance_to_point(mouse_x,mouse_y)),direction);
+yTo = obj_player.y// + lengthdir_y(min(96,distance_to_point(mouse_x,mouse_y)),direction);
 
-lightmap_set_ambient(0.3);
-lightmap_set_light_parent_object(obj_light_parent);
-lightmap_set_caster_parent_object(obj_caster_parent);
-lightmap_move_with_view(true);
-lightmap_set_shadows_enabled(true);
-lightmap_set_shadow_size(256);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>lightmap_update();
-lightmap_draw();
+x += (xTo-x)/25;
+y += (yTo-y)/25;
+
+view_xview = -(view_wview/2) + x;
+view_yview = -(view_hview/2) + y;
+
+// make it so that te camara can't go out of bounds
+view_xview = clamp(view_xview,0,room_width-view_wview);
+view_yview = clamp(view_yview,0,room_height-view_hview);
 </string>
           </argument>
         </arguments>

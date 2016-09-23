@@ -8,36 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>lightmap_init(view_wview,view_hview);
-
-lightmap_set_ambient(0.3);
-lightmap_set_light_parent_object(obj_light_parent);
-lightmap_set_caster_parent_object(obj_caster_parent);
-lightmap_move_with_view(true);
-lightmap_set_shadows_enabled(true);
-lightmap_set_shadow_size(256);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -55,8 +25,11 @@ lightmap_set_shadow_size(256);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lightmap_update();
-lightmap_draw();
+            <string>// Draw FPS if in debug mode
+if debug_mode {
+    draw_set_colour(c_white);
+    draw_text(view_xview + 48, view_yview + 48, "FPS = " + string(fps_real));
+}
 </string>
           </argument>
         </arguments>

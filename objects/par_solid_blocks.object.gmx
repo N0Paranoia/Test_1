@@ -69,20 +69,24 @@ switch(object_index) {
         caster_init_polygon();
         caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
         caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
-        caster_add_point(-sprite_xoffset + (sprite_width - 4), -sprite_yoffset + sprite_height - 4);
-        caster_add_point(-sprite_xoffset + (sprite_width - 12), -sprite_yoffset + sprite_height - 6);
-        caster_add_point(-sprite_xoffset + 12,-sprite_yoffset + sprite_height - 6);
-        caster_add_point(-sprite_xoffset + 4,-sprite_yoffset + sprite_height - 4);
+        caster_add_point(-sprite_xoffset + (sprite_width - 6), -sprite_yoffset + sprite_height - 6);
+        caster_add_point(-sprite_xoffset + (sprite_width - 12), -sprite_yoffset + sprite_height - 9);
+        caster_add_point(-sprite_xoffset + (sprite_width - 19), -sprite_yoffset + sprite_height - 12);
+        caster_add_point(-sprite_xoffset + 19,-sprite_yoffset + sprite_height - 12);
+        caster_add_point(-sprite_xoffset + 12,-sprite_yoffset + sprite_height - 9);
+        caster_add_point(-sprite_xoffset + 6,-sprite_yoffset + sprite_height - 6);
         break;
     case obj_hole:
         caster_init_polygon();
         caster_add_point(-sprite_xoffset,-sprite_yoffset + sprite_height);
         caster_add_point(-sprite_xoffset + sprite_width, -sprite_yoffset + sprite_height);
         caster_add_point(-sprite_xoffset + sprite_width,-sprite_yoffset);
-        caster_add_point(-sprite_xoffset + sprite_width -4 ,-sprite_yoffset + 4);
-        caster_add_point(-sprite_xoffset + sprite_width -12 ,-sprite_yoffset + 6);
-        caster_add_point(-sprite_xoffset + 12 ,-sprite_yoffset + 6);
-        caster_add_point(-sprite_xoffset + 4 ,-sprite_yoffset + 4);
+        caster_add_point(-sprite_xoffset + sprite_width - 6 ,-sprite_yoffset + 6);
+        caster_add_point(-sprite_xoffset + sprite_width -12 ,-sprite_yoffset + 9);
+        caster_add_point(-sprite_xoffset + sprite_width -19 ,-sprite_yoffset + 12);
+        caster_add_point(-sprite_xoffset + 19 ,-sprite_yoffset + 12);
+        caster_add_point(-sprite_xoffset + 12 ,-sprite_yoffset + 9);
+        caster_add_point(-sprite_xoffset + 6 ,-sprite_yoffset + 6);
         caster_add_point(-sprite_xoffset,-sprite_yoffset);
         break;
     default:

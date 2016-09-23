@@ -21,6 +21,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\tiles</background>
+    <background>background\bgr_forrest</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -28,6 +29,7 @@
     <script>scripts\scr_player_state_normal.gml</script>
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_doors.gml</script>
+    <script>scripts\scr_physics.gml</script>
     <scripts name="Light Engine">
       <scripts name="lightmap">
         <script>scripts\lightmap_init.gml</script>
@@ -81,6 +83,8 @@
     <object>objects\obj_light</object>
     <object>objects\obj_lightmap</object>
     <object>objects\obj_caster_parent</object>
+    <object>objects\obj_camera</object>
+    <object>objects\obj_hud</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
