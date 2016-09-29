@@ -15,4 +15,3 @@ else if(lightmap_ambient < 0){
 }
 
 lightmap_ambient_color = make_colour_rgb(lightmap_ambient*255,lightmap_ambient*255,lightmap_ambient*255);
-

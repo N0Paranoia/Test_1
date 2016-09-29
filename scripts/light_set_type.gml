@@ -5,4 +5,3 @@
 //USAGE: light_set_type(<type>);
 
 light_type = argument0;
-

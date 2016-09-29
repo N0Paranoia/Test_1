@@ -11,4 +11,3 @@ m = 2 * 3.141592654 / fractions;
 for(i = 0; i < fractions; i++){
     caster_add_point(cos(m * i) * radius, sin(m * i) * radius);
 }
-

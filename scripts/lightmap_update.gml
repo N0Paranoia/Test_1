@@ -131,4 +131,3 @@ else{
 
 //reset the lightmap surface
 surface_reset_target();
-

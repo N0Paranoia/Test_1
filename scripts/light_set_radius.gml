@@ -3,4 +3,3 @@
 //USAGE: light_set_radius(<color>);
 
 light_radius = argument0;
-

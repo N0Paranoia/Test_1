@@ -11,4 +11,3 @@ if(!surface_exists(lightmap_surface_id)){
 }else{
     surface_resize(lightmap_surface_id,lightmap_width,lightmap_height);
 }
-

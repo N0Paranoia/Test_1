@@ -19,4 +19,3 @@ lightmap_move_with_view(false);                 //sets wether this should move w
 lightmap_shadow_surface_width = 256;
 lightmap_shadow_surface_height = 256;
 lightmap_shadow_surface_id = surface_create(lightmap_shadow_surface_width, lightmap_shadow_surface_height);
-

@@ -9,4 +9,3 @@ light_set_sprite(argument0);                        //set the sprite
 light_set_rotation(0);                              //sets the lights rotation (0 for point lights of course)
 light_set_sprite_index(argument1)                   //sets the sprite index
 light_set_height(8);                               //sets the light height
-

@@ -5,4 +5,3 @@ if(!surface_exists(lightmap_shadow_surface_id)){
 }else{
     surface_resize(lightmap_shadow_surface_id,lightmap_shadow_surface_width,lightmap_shadow_surface_height);
 }
-

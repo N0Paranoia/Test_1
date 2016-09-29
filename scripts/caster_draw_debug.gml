@@ -13,4 +13,3 @@ for(i = 0; i < caster_point_count-1; i++){
 draw_line_width(caster_point_x[0]+x,caster_point_y[0]+y,caster_point_x[caster_point_count-1]+x,caster_point_y[caster_point_count-1]+y, 1);
 
 draw_set_color(c_white);
-

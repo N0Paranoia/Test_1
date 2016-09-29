@@ -51,4 +51,3 @@ draw_vertex(x_2,y_2);
 draw_vertex(x_2,y_2);
 draw_vertex(x_1_a,y_1_a);
 draw_vertex(x_2_a,y_2_a);
-

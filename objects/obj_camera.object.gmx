@@ -32,8 +32,8 @@ yTo = obj_player.y// + lengthdir_y(min(96,distance_to_point(mouse_x,mouse_y)),di
 x += (xTo-x)/25;
 y += (yTo-y)/25;
 
-view_xview = -(view_wview/2) + x;
-view_yview = -(view_hview/2) + y;
+view_xview = -(view_wview/2) + obj_player.x; //x;
+view_yview = -(view_hview/2) + obj_player.y; //y;
 
 // make it so that te camara can't go out of bounds
 view_xview = clamp(view_xview,0,room_width-view_wview);

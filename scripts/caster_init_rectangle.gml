@@ -7,4 +7,3 @@ caster_add_point(left,top);
 caster_add_point(right,top);
 caster_add_point(right,bottom);
 caster_add_point(left,bottom);
-

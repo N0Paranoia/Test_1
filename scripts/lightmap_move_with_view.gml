@@ -3,4 +3,3 @@
 //USAGE: lightmap_move_with_view(<shoud_move>);
 
 lightmap_move = argument0;
-

@@ -10,4 +10,3 @@ caster_point_y[caster_point_count] = argument1;
 
 //increase the total point count
 caster_point_count += 1;
-

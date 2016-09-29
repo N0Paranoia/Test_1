@@ -3,4 +3,3 @@
 //USAGE: light_set_sprite(<sprite>);
 
 light_sprite = argument0;
-

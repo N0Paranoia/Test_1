@@ -22,4 +22,3 @@ and you use this function half way through, it will set the blend mode to normal
 again. You will have to reset it to bm_add. 
 
 */
-
