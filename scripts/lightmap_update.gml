@@ -56,11 +56,11 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
         draw_set_blend_mode(bm_normal);
         
         //clear the buffer with black (so it is empty)
-        draw_clear(c_black);
+        draw_clear(c_yellow);
         
         //if it is a point light
         if(light_type == 0){
-            draw_circle_colour(w,h,light_radius,light_color,c_black,false);
+            draw_circle_colour(w,h,light_radius,light_color,c_green,false);
         }
         //if it is a sprite light
         if(light_type == 1){
@@ -74,7 +74,7 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
                 
                 draw_primitive_begin(pr_trianglelist);
                 
-                draw_set_color(c_black);
+                draw_set_color(c_fuchsia);
                 
                 for(i = 0; i < caster_point_count-1; i++){
                     //from this index to the next draw a shadow
@@ -94,7 +94,7 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
                 
                 draw_primitive_end();
                 
-                draw_sprite_ext(sprite_index,image_index,x - lx + w,y - ly + h,image_xscale,image_yscale,image_angle,c_black,1);
+                draw_sprite_ext(sprite_index,image_index,x - lx + w,y - ly + h,image_xscale,image_yscale,image_angle,c_red,1);
             }
         }
         
@@ -119,7 +119,7 @@ else{
         with(lightmap_parent_object_light){
             //if it is a light
             if(light_type == 0){
-                draw_circle_colour(x + temp_x_offset,y + temp_y_offset,light_radius,light_color,c_black,false);
+                draw_circle_colour(x + temp_x_offset,y + temp_y_offset,light_radius,light_color,c_blue,false);
             }
             //if it is a sprite light
             if(light_type == 1){
