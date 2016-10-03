@@ -56,11 +56,11 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
         draw_set_blend_mode(bm_normal);
         
         //clear the buffer with black (so it is empty)
-        draw_clear(c_yellow);
+        draw_clear(c_black);
         
         //if it is a point light
         if(light_type == 0){
-            draw_circle_colour(w,h,light_radius,light_color,c_green,false);
+            draw_circle_colour(w,h,light_radius,light_color,c_black,false);
         }
         //if it is a sprite light
         if(light_type == 1){
@@ -74,7 +74,7 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
                 
                 draw_primitive_begin(pr_trianglelist);
                 
-                draw_set_color(c_fuchsia);
+                draw_set_color(c_black);
                 
                 for(i = 0; i < caster_point_count-1; i++){
                     //from this index to the next draw a shadow
@@ -94,10 +94,25 @@ if(lightmap_shadows && lightmap_parent_object_light != -1){
                 
                 draw_primitive_end();
                 
-                draw_sprite_ext(sprite_index,image_index,x - lx + w,y - ly + h,image_xscale,image_yscale,image_angle,c_red,1);
+                draw_sprite_ext(sprite_index,image_index,x - lx + w,y - ly + h,image_xscale,image_yscale,image_angle,c_black,1);
             }
         }
-        
+///////////////////////////////////////////////////        
+        draw_set_alpha(0.8);
+ 
+        //not sure if you need this but try it
+        draw_set_blend_mode(bm_add);
+         
+        //if it is a point light
+        if(light_type == 0){
+             draw_circle_colour(w,h,light_radius,light_color,c_black,false);
+        }
+        //if it is a sprite light
+        if(light_type == 1){
+            draw_sprite_ext(light_sprite,light_sprite_index, w,h,1,1,light_rotation,light_color,1); 
+        }
+///////////////////////////////////////////////
+
         //reset this light surface
         surface_reset_target();
         
@@ -119,7 +134,7 @@ else{
         with(lightmap_parent_object_light){
             //if it is a light
             if(light_type == 0){
-                draw_circle_colour(x + temp_x_offset,y + temp_y_offset,light_radius,light_color,c_blue,false);
+                draw_circle_colour(x + temp_x_offset,y + temp_y_offset,light_radius,light_color,c_black,false);
             }
             //if it is a sprite light
             if(light_type == 1){

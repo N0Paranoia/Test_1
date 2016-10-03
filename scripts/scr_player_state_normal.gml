@@ -10,8 +10,6 @@ move_hor = key_left + key_right;
 speed_x = move_hor * x_movement_speed;
 move_vert = key_up + key_down;
 
-
-
 // jumping
 if (place_meeting(x,y+1,par_solid_blocks)) {
     speed_y = key_jump * -speed_j;
