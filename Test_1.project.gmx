@@ -25,8 +25,11 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_calculate_fps_adjustment.gml</script>
+    <script>scripts\scr_animate_player_sprite.gml</script>
     <script>scripts\scr_collision.gml</script>
-    <script>scripts\scr_player_state_normal.gml</script>
+    <script>scripts\scr_player_state_walking.gml</script>
+    <script>scripts\scr_player_state_idle.gml</script>
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_doors.gml</script>
     <script>scripts\scr_physics.gml</script>

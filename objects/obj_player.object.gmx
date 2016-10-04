@@ -36,10 +36,13 @@ x_running_speed = 8;
 
 hor_size = 48;
 vert_size = 48;
-
+ 
 can_go_trough_doors = true
 
-state = states.normal;
+state = states.idle;
+
+facing_left = false;
+facing_right = true;
 
 caster_init_sprite();
 </string>
@@ -66,9 +69,18 @@ caster_init_sprite();
             <kind>1</kind>
             <string>scr_get_input();
 
+if(key_right !=0 || key_left !=0) {
+    state = states.walking;
+} else {
+    state = states.idle;
+}
+
 switch(state) {
-    case states.normal:
-        scr_player_state_normal();
+    case states.idle:
+        scr_player_state_idle();
+        break;
+    case states.walking:
+        scr_player_state_walking();
         break;
 }
 
