@@ -44,6 +44,12 @@ state = states.idle;
 facing_left = false;
 facing_right = true;
 
+frame_counter = 0;
+frame_speed = 20;
+frame_switch = 600;
+
+frame = 0;
+
 caster_init_sprite();
 </string>
           </argument>

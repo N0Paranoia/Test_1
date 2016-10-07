@@ -55,7 +55,7 @@
   </views>
   <instances>
     <instance objName="obj_lightmap" x="0" y="0" name="inst_4CA24B89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_light" x="384" y="96" name="inst_A591ACFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light" x="240" y="0" name="inst_A591ACFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="576" y="0" name="inst_D57267F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera" x="0" y="32" name="inst_B08EB565" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="144" y="192" name="inst_E43E13EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,6 +95,9 @@
     <instance objName="obj_hud" x="48" y="0" name="inst_D9DA7304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="528" y="96" name="inst_32260A0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="720" y="96" name="inst_420B209C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light" x="864" y="0" name="inst_67564583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light" x="1200" y="0" name="inst_1CBDFC0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup" x="624" y="192" name="inst_BD3CFFBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles" x="96" y="96" w="48" h="48" xo="96" yo="0" id="10000190" name="inst_45614FBD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
