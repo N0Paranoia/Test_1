@@ -11,7 +11,7 @@ speed_x = ((move_hor * x_movement_speed) * scr_calculate_fps_adjustment());
 move_vert = key_up + key_down;
 
 // jumping
-if (place_meeting(x,y+1,par_solid_blocks)) {
+if (place_meeting(x,y+1,par_solid_blocks)) {;
     speed_y = key_jump * -speed_j;
 }
 

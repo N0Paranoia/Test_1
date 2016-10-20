@@ -50,6 +50,8 @@ frame_switch = 600;
 
 frame = 0;
 
+attack = 0;
+
 caster_init_sprite();
 </string>
           </argument>
@@ -77,6 +79,8 @@ caster_init_sprite();
 
 if(key_right !=0 || key_left !=0) {
     state = states.walking;
+} else if(key_attack !=0){
+    state = states.attacking;
 } else {
     state = states.idle;
 }
@@ -87,6 +91,9 @@ switch(state) {
         break;
     case states.walking:
         scr_player_state_walking();
+        break;
+    case states.attacking:
+        scr_player_state_attacking();        
         break;
 }
 

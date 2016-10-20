@@ -6,6 +6,8 @@ var start_frame_walking_left = 0;
 var end_frame_walking_left = 7;
 var start_frame_walking_right = 10;
 var end_frame_walking_right = 17;
+var start_frame_attacking_left = 37;
+var start_frame_attacking_right = 38;
 
 sprite_index = spr_player;
 
@@ -52,6 +54,13 @@ switch (state) {
                 }
             }
             obj_player.frame_counter += obj_player.frame_speed;
+        }
+        break;
+    case states.attacking:
+        if(facing_left) {
+            image_index = start_frame_attacking_left;       
+        } else if(facing_right) {
+            image_index = start_frame_attacking_right;
         }
         break;
 }

@@ -22,10 +22,10 @@
   </sprites>
   <backgrounds name="background">
     <background>background\tiles</background>
-    <background>background\bgr_forrest</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_player_state_attacking.gml</script>
     <script>scripts\scr_calculate_fps_adjustment.gml</script>
     <script>scripts\scr_animate_player_sprite.gml</script>
     <script>scripts\scr_collision.gml</script>

@@ -30,6 +30,7 @@ if debug_mode {
     draw_set_colour(c_white);
     draw_text(view_xview + 48, view_yview + 48, "FPS = " + string(fps_real));
     draw_text(view_xview + 240, view_yview + 48, "Image Index = " + string(obj_player.image_index));
+    draw_text(view_xview + 48, view_yview + 24, "State = " + string(obj_player.state));
 }
 </string>
           </argument>

@@ -12,7 +12,9 @@
   <showcolour>-1</showcolour>
   <code>enum states {
     idle,
-    walking
+    walking,
+    attacking,
+    blocking
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
